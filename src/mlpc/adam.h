@@ -1,7 +1,7 @@
 /**
  * \file   adam.h
  * \author Domen Šoberl
- * \date   January 2023
+ * \date   February 2024
  * \brief  Adam optimizer
  * 
  * This unit implements the Adam optimizer. As opposed to the SGD optimization,

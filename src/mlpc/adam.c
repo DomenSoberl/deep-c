@@ -221,7 +221,7 @@ void adam_optimize(MLP *mlp, Adam *adam)
                 mb1 = mb->data[idx] / (1 - adam->beta1t);
                 vb1 = vb->data[idx] / (1 - adam->beta2t);
 
-                b->data[idx] -= adam->alpha * (mb1 / sqrt(vb1) + adam->epsilon);
+                b->data[idx] -= adam->alpha * (mb1 / (sqrt(vb1) + adam->epsilon));
             }
         }
     }
