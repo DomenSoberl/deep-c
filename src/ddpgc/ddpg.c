@@ -299,5 +299,6 @@ int ddpg_load_policy(DDPG *ddpg, const char *filename)
         return -1;
     }
 
+    fclose(file);
     return 0;
 }
